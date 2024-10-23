@@ -1,0 +1,157 @@
+    1  ls
+    2  exit
+    3  ./autorun.sh 
+    4  apt get-install gcc make perl
+    5  apt install gcc make perl
+    6  apt install-get gcc make perl
+    7  exit
+    8  sudo apt install get gcc make perl
+    9  exit
+   10  ./autorun.sh 
+   11  exit
+   12  sudo apt install get gcc make perl
+   13  apt update
+   14  sudo apt update
+   15  sudo apt upgrade
+   16  exit
+   17  sudo apt install get gcc make perl
+   18  sudo apt install gcc make perl
+   19  exit
+   20  ./autorun.sh 
+   21  sudo shutdown -r now
+   22  lsmod | grep vboxguest
+   23  exit
+   24  useradd dao
+   25  sudo useradd dao
+   26  id
+   27  visudo
+   28  sudo visudo
+   29  exit
+   30  sudo visudo
+   31  groupadd ejercicio
+   32  sudo groupadd ejercicio
+   33  group
+   34  groups
+   35  usermod -aG ejercicio dao
+   36  sudo usermod -aG ejercicio dao
+   37  id temp
+   38  cat /etc/passwd
+   39  id dao
+   40  cat /etc/group
+   41  cd
+   42  cd home
+   43  cd /home/
+   44  cd /zaratul
+   45  cd zaratul/
+   46  ls
+   47  cd /h
+   48  cd 
+   49  cd ..
+   50  ls
+   51  cd zaratul/
+   52  mkdir ejercicio1
+   53  ls
+   54  cd ejercicio1/
+   55  touch fichero.xt
+   56  nano fichero.xt 
+   57  cat /etc/group > fichero2.txt
+   58  cat fichero2.txt
+   59  cat /etc/group | grep ejercicio >> fichero1.txt 
+   60  cat fichero1.txt
+   61  nano fichero1.txt
+   62  exit
+   63  lvm2 --v
+   64  lsmod | grep -i lvm2
+   65  sudo apt install lvm2
+   66  lsmod | grep -i lvm2
+   67  lsmod | grep -i lvm
+   68  exit
+   69  lsblk
+   70  df -H
+   71  sudo lvs
+   72  sudo vgdisplay
+   73  sudo pvs
+   74  nano segundoparcial.txt
+   75  lsblk
+   76  sudo mkfs.8e /dev/sdb
+   77  sudo mkfs.lvm /dev/sdb
+   78  sudo pvs
+   79  sudo lvs
+   80  sudo pvcreate /dev/sdb
+   81  sudo pvcreate /dev/sdc
+   82  sudo pvcreate /dev/sdd
+   83  sudo pvcreate /dev/sde
+   84  sudo pvs
+   85  ls /dev/mapper/
+   86  pvs
+   87  sudo pvs
+   88  sudo vgcreate zarvg /dev/sdb
+   89  sudo vgs
+   90  sudo vgextend zarvg /dev/sdc
+   91  sudo vgs
+   92  sudo vgextend zarvg /dev/sdd
+   93  sudo vgextend zarvg /dev/sde
+   94  sudo vgs
+   95  sudo lvcreate -L 4G -n zarlv zarvg
+   96  sudo pvs
+   97  sudo lvs
+   98  sudo mkfs.ext4 /dev/mapper/zarvg-zarlv 
+   99  sudo mkdir ~/zarmnt
+  100  sudo mount /dev/mapper/zarvg-zarlv ~/zarmnt/
+  101  sudo lsblk
+  102  ls
+  103  sudo vgs
+  104  sudo lvextend +1G /dev/mapper/zarlv
+  105  sudo lvextend +1G /dev/mapper/zarvg-zarlv
+  106  sudo lvextend -L +1G /dev/mapper/zarvg-zarlv
+  107  sudo pvs
+  108  sudp vgs
+  109  sudo vgs
+  110  sudo lvs
+  111  exit
+  112  df -h
+  113  sudo pvs
+  114  sudo vgs
+  115  exit
+  116  lsblk
+  117  fdisk /dev/sdb
+  118  sudo fdisk /dev/sdb
+  119  lsblk
+  120  sudo fdisk /dev/sdc
+  121  lsblk
+  122  sudo fdisk /dev/sdd
+  123  wipefs -a /dev/sdb1
+  124  sudo wipefs -a /dev/sdb1
+  125  sudo wipefs -a /dev/sdc1
+  126  sudo wipefs -a /dev/sdd1
+  127  lsblk
+  128  sudo pvcreate /dev/sdb1
+  129  sudo pvcreate /dev/sdc1
+  130  sudo pvcreate /dev/sdd1
+  131  sudo pvs
+  132  sudo vgcreate datos /dev/sdb1
+  133  sudo vgs
+  134  sudo vgextend datos /dev/sdc1
+  135  sudo vgextend datos /dev/sdd1
+  136  sudo vgs
+  137  sudo lvcreate -L +1G datos -n www
+  138  sudo lvcreate -L +4G datos -n salvas
+  139  sudo lvs
+  140  sudo lvextend -L +1G /dev/mapper/datos-www 
+  141  sudo lvextend -L +1000MB /dev/mapper/datos-www 
+  142  sudo mkfs.ext4 /dev/mapper/datos-www 
+  143  sudo resize2fs /dev/mapper/datos-www 
+  144  sudo lvs
+  145  cat history
+  146  history
+  147  history >> history.txt
+  148  ls
+  149  cat history.txt 
+  150  nano history.txt 
+  151  history - a > history.txt 
+  152  history -a > history.txt 
+  153  cat history.txt 
+  154  nano history.txt 
+  155  history 
+  156  history -a
+  157  history >> history.txt 
